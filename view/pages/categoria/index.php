@@ -48,6 +48,7 @@ $lista = $categoria->listar();
                                         Excluir
                                     </button>
                                 </form>
+
                             </td>
                         </tr>
                     <?php } ?>

@@ -1,38 +1,39 @@
 USE centralstore;
 
-INSERT INTO Categoria (id_categoria, nome) VALUES
-    (1, 'Eletrônicos'),
-    (2, 'Eletrodomésticos'),
-    (3, 'Roupas e Acessórios'),
-    (4, 'Beleza e Cuidados Pessoais'),
-    (5, 'Saúde e Bem-estar'),
-    (6, 'Alimentos e Bebidas'),
-    (7, 'Casa e Decoração'),
-    (8, 'Esportes e Lazer'),
-    (9, 'Automotivo'),
-    (10, 'Brinquedos e Jogos'),
-    (11, 'Papelaria e Escritório'),
-    (12, 'Livros e Mídia'),
-    (13, 'Música e Instrumentos Musicais'),
-    (14, 'Pet Shop'),
-    (15, 'Ferramentas e Construção'),
-    (16, 'Relógios e Óculos'),
-    (17, 'Energia Solar e Sustentabilidade'),
-    (18, 'Segurança e Monitoramento'),
-    (19, 'Viagem e Turismo'),
-    (20, 'Serviços Digitais');
+INSERT INTO Categoria (nome) VALUES
+    ('Eletrônicos'),
+    ('Eletrodomésticos'),
+    ('Roupas e Acessórios'),
+    ('Beleza e Cuidados Pessoais'),
+    ('Saúde e Bem-estar'),
+    ('Alimentos e Bebidas'),
+    ('Casa e Decoração'),
+    ('Esportes e Lazer'),
+    ('Automotivo'),
+    ('Brinquedos e Jogos'),
+    ('Papelaria e Escritório'),
+    ('Livros e Mídia'),
+    ('Música e Instrumentos Musicais'),
+    ('Pet Shop'),
+    ('Ferramentas e Construção'),
+    ('Relógios e Óculos'),
+    ('Energia Solar e Sustentabilidade'),
+    ('Segurança e Monitoramento'),
+    ('Viagem e Turismo'),
+    ('Serviços Digitais');
 
 INSERT INTO Produto (nome, categoria_id, descricao, preco) VALUES
-    ('iPhone 15', 1, 'Smartphone com tela OLED de 6,1 polegadas e chip A17.', 5999.00),
-    ('Geladeira Samsung 520L', 2, 'Geladeira de 520 litros com tecnologia de refrigeração no-frost.', 3499.00),
-    ('Tênis Nike Air Max', 3, 'Tênis de corrida com amortecimento Air Max e design moderno.', 499.90),
-    ('Base Líquida Loreal', 4, 'Base líquida de alta cobertura com efeito matte e longa duração.', 89.90),
-    ('Multivitamínico One a Day', 5, 'Suplemento diário para melhorar a saúde geral e aumentar a imunidade.', 69.90),
-    ('Cerveja Artesanal IPA', 6, 'Cerveja artesanal com sabor intenso e amargor característico.', 19.90),
-    ('Sofá Retrátil 3 Lugares', 7, 'Sofá retrátil e reclinável, ideal para conforto e elegância na sua sala.', 1599.00),
-    ('Bicicleta MTB Aro 29', 8, 'Bicicleta de mountain bike com suspensão dianteira e aro 29.', 1899.00),
-    ('Kit de Faróis LED para Carro', 9, 'Kit completo de faróis LED para melhoria da visibilidade do seu veículo.', 299.00),
-    ('Jogo de Tabuleiro Catan', 10, 'Jogo de estratégia onde os jogadores constroem e negociam recursos.', 249.90);
+    ('iPhone 15', (SELECT id_categoria FROM Categoria WHERE nome='Eletrônicos'), 'Smartphone com tela OLED de 6,1 polegadas e chip A17.', 5999.00),
+    ('Geladeira Samsung 520L', (SELECT id_categoria FROM Categoria WHERE nome='Eletrodomésticos'), 'Geladeira de 520 litros com tecnologia de refrigeração no-frost.', 3499.00),
+    ('Tênis Nike Air Max', (SELECT id_categoria FROM Categoria WHERE nome='Roupas e Acessórios'), 'Tênis de corrida com amortecimento Air Max e design moderno.', 499.90),
+    ('Base Líquida Loreal', (SELECT id_categoria FROM Categoria WHERE nome='Beleza e Cuidados Pessoais'), 'Base líquida de alta cobertura com efeito matte e longa duração.', 89.90),
+    ('Multivitamínico One a Day', (SELECT id_categoria FROM Categoria WHERE nome='Saúde e Bem-estar'), 'Suplemento diário para melhorar a saúde geral e aumentar a imunidade.', 69.90),
+    ('Cerveja Artesanal IPA', (SELECT id_categoria FROM Categoria WHERE nome='Alimentos e Bebidas'), 'Cerveja artesanal com sabor intenso e amargor característico.', 19.90),
+    ('Sofá Retrátil 3 Lugares', (SELECT id_categoria FROM Categoria WHERE nome='Casa e Decoração'), 'Sofá retrátil e reclinável, ideal para conforto e elegância na sua sala.', 1599.00),
+    ('Bicicleta MTB Aro 29', (SELECT id_categoria FROM Categoria WHERE nome='Esportes e Lazer'), 'Bicicleta de mountain bike com suspensão dianteira e aro 29.', 1899.00),
+    ('Kit de Faróis LED para Carro', (SELECT id_categoria FROM Categoria WHERE nome='Automotivo'), 'Kit completo de faróis LED para melhoria da visibilidade do seu veículo.', 299.00),
+    ('Jogo de Tabuleiro Catan', (SELECT id_categoria FROM Categoria WHERE nome='Brinquedos e Jogos'), 'Jogo de estratégia onde os jogadores constroem e negociam recursos.', 249.90);
+
 
 INSERT INTO Usuario (nome, email, senha, telefone, data_nascimento, cpf, genero, foto_perfil) VALUES
     ('João Silva', 'joao.silva@email.com', 'hash_da_senha', '11999990001', '1990-01-15', '12345678901', 'Masculino', 'joao.jpg'),

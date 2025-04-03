@@ -3,18 +3,10 @@ include_once "../../../model/Categoria.php";
 $categoria = new Categorias();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = $_POST["nome"] ?? '';
+    $nome = $_POST["nome"];
+    $sucesso = $categoria->adicionar($nome);
+    header("Location: index.php?sucesso=adicionado");
     
-    if (empty($nome)) {
-        $erro = "nome_vazio";
-    } else {
-        $sucesso = $categoria->adicionar($nome);
-        
-        if ($sucesso) {
-            header("Location: index.php");
-            exit;
-        }
-    }
 }
 
 
@@ -32,18 +24,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <main class="editar-categoria-div-container">
         <div class="editar-categoria-div">
             <h1>Nova Categoria</h1>
-            
-            <?php if (isset($erro) && $erro == 'nome_vazio'): ?>
-                <div class="alert alert-danger">O nome da categoria não pode ser vazio.</div>
-            <?php elseif (isset($erro) && $erro == 'falha_adicionar'): ?>
-                <div class="alert alert-danger">Falha ao adicionar categoria. Tente novamente.</div>
-            <?php endif; ?>
-            
+
+
             <div>
-                <form class="categoria-edit-area" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                <form class="categoria-edit-area" action="categoria-criar.php" method="POST">
                     <div class="form-group">
                         <label for="nome">Nome da Categoria:</label>
-                        <input type="text" id="nome" name="nome" value="<?php echo isset($_POST['nome']) ? $_POST['nome'] : ''; ?>" required>
+                        <input type="text" id="nome" name="nome" value="<?php echo $_POST['nome'] ?? ''; ?>" required>
                     </div>
                     <div class="buttons">
                         <a href="index.php" class="btn btn-secondary">Cancelar</a>

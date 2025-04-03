@@ -12,13 +12,13 @@ class Categorias{
         $this->conn = $db->conectar();
     }
 
-    public function listar(){
-        $query = "SELECT * FROM $this->tabela";
-        $stmt = $this->conn->prepare($query);
+    public function listar() {
+        $sql = "SELECT * FROM Categoria ORDER BY id_categoria ASC";
+        $stmt = $this->conn->prepare($sql);
         $stmt->execute();
-
-        return $stmt->fetchAll();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+    
 
     public function obterPorId($id){
         $query = "SELECT * FROM $this->tabela WHERE id_categoria = :id";
@@ -45,15 +45,16 @@ class Categorias{
     public function adicionar($nome){
         $query = "INSERT INTO $this->tabela (nome) VALUES (:nome)";
         $stmt = $this->conn->prepare($query);
-        $stmt->bindParam(':nome', $nome);
+        $stmt->bindParam(':nome', $nome, PDO::PARAM_STR);
         
         try {
             return $stmt->execute();
-        } catch(PDOException $e) {
+        } catch (PDOException $e) {
+            echo "Erro ao adicionar categoria: " . $e->getMessage();
             return false;
         }
     }
-
+    
     public function excluir($id){
         $query = "DELETE FROM $this->tabela WHERE id_categoria = :id";
         $stmt = $this->conn->prepare($query);
