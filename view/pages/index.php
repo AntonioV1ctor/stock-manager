@@ -1,6 +1,6 @@
 <?php
 include_once "../../model/Categoria.php";
-require_once  '../../model/Produto.php';
+require_once  "../../model/Produto.php";
 include_once "../../model/Usuarios.php";
 $usuarios = new Usuarios();
 $user = $usuarios->listar();

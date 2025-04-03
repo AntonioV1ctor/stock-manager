@@ -1,0 +1,222 @@
+/* Estilos para a página principal de usuários */
+.usuario-main {
+    padding: 20px;
+    margin-left: 250px;
+    transition: margin-left 0.3s;
+}
+
+.usuario-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.usuario-container .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.usuario-container .actions {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.usuario-container .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.usuario-container .btn-primary:hover {
+    background-color: #0069d9;
+}
+
+.usuario-container .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.usuario-container .table th,
+.usuario-container .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.usuario-container .table thead th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: 600;
+}
+
+.usuario-container .table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.usuario-container .btn-edit,
+.usuario-container .btn-delete {
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.usuario-container .btn-edit {
+    background-color: #ffc107;
+    color: #212529;
+    border: none;
+}
+
+.usuario-container .btn-delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.usuario-container .btn-edit:hover {
+    background-color: #e0a800;
+}
+
+.usuario-container .btn-delete:hover {
+    background-color: #c82333;
+}
+
+/* Estilos para os formulários de edição e criação */
+.editar-categoria-div-container {
+    padding: 20px;
+    margin-left: 250px;
+}
+
+.editar-categoria-div {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.editar-categoria-div h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.categoria-edit-area {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Estilos para o modal de exclusão */
+.usuario-excluir-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.usuario-excluir-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 500px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.usuario-excluir-box h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #dc3545;
+}
+
+.usuario-excluir-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+} 
