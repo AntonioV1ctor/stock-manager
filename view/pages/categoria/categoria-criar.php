@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h1>Nova Categoria</h1>
 
 
-            <div>
+            <div class="categoria-edit-area-container">
                 <form class="categoria-edit-area" action="categoria-criar.php" method="POST">
                     <div class="form-group">
                         <label for="nome">Nome da Categoria:</label>

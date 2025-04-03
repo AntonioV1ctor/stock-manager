@@ -12,7 +12,10 @@ class Produtos {
     }
 
     public function listar() {
-        $query = "SELECT * FROM $this->tabela ORDER BY id_produto ASC";
+        $query = "SELECT p.*, c.nome as categoria_nome 
+                  FROM $this->tabela p
+                  LEFT JOIN Categoria c ON p.categoria_id = c.id_categoria
+                  ORDER BY p.id_produto ASC";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);

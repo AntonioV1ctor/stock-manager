@@ -16,7 +16,7 @@ $lista = $produto->listar();
 
 
             <h1 class="title">Produtos</h1>
-            <div class="actions">
+            <div class="actions-product">
                 <a href="produto-criar.php" class="btn btn-primary"><i class="fa-solid fa-plus"></i></a>
             </div>
 

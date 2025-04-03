@@ -9,6 +9,8 @@
 .home-container {
     width: 65vw;
     height: 50vh;
+    min-width: 240px;
+    min-height: 300px;
     border: 1px solid #2B3139;
     display: flex;
     justify-content: center;
@@ -20,7 +22,7 @@
 
     margin-top: 20px;
     width: 20dvw;
-    min-width: 100px;
+    min-width: 220px;
     flex-wrap: wrap;
     height: 12dvh;
     border: 1px solid #2B3139;

@@ -17,7 +17,7 @@ $lista = $categoria->listar();
     <main class="categoria-main">
         <div class="categoria-div-align">
             <h1 class="title">Categorias</h1>
-            <div class="actions">
+            <div class="actions-category">
                 <a href="categoria-criar.php" class="btn btn-primary"><i class="fa-solid fa-plus"></i></a>
             </div>
 

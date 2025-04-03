@@ -8,6 +8,15 @@
     --shadow:  rgba(0, 0, 0, 0.366);
 }
 
+.usuario-body {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+}
+.actions-user{
+    width: 100%;
+    justify-content: right;
+    display: flex;
+}
 
 thead {
     background-color: #99bde1;
@@ -15,7 +24,7 @@ thead {
     height: 40px;
 }
 
-table {
+.table-user {
     border-collapse: collapse; 
 }
 
@@ -47,5 +56,18 @@ tr:nth-child(even) {
 }
 
 .usuario-container{
-    width: 75vw;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table-user {
+    width: 100%;
 }

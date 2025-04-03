@@ -5,7 +5,7 @@
     --shadow: rgba(0, 0, 0, 0.15);
     --text-dark: #333;
     --text-light: #ffffff;
-    --accent: #71ed6fc2;
+    --accent: #3B8640;
     --accent-dark: #7ba7ce;
     --background: #f5f7fa;
     --border-radius: 8px;
@@ -13,7 +13,6 @@
 
 body {
     background-color: var(--background);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -89,20 +88,22 @@ tr:hover {
 
 .editar-categoria-div {
     width: 90%;
-    max-width: 600px;
-    min-height: 300px;
+    height: 350px;
+    max-width: 300px;
+    min-height: 50px;
     border-radius: var(--border-radius);
-    background-color: white;
+    background-color: #262C36;
     box-shadow: 0 5px 15px var(--shadow);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 30px;
+    border: 1px solid #3D444D;
 }
 
 .editar-categoria-div h1 {
-    color: var(--primary);
+    color: #D1D7E0;
     margin-bottom: 25px;
     font-size: 28px;
 }
@@ -116,6 +117,11 @@ tr:hover {
     padding: 20px 0;
 }
 
+/* .categoria-edit-area-container{
+    width: 300px;
+    background-color: red;
+} */
+
 .form-group {
     width: 100%;
     margin-bottom: 20px;
@@ -125,7 +131,7 @@ tr:hover {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: var(--text-dark);
+    color: #D1D7E0;
 }
 
 .form-group input {
@@ -213,8 +219,7 @@ tr:hover {
 }
 
 
-.actions{
-
+.actions-category{
     margin-bottom: 10px;
     width: 100%;
     display: flex;

@@ -17,8 +17,14 @@
 .produtos-main {
     width: 100%;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
+}
+
+.actions-product{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10px;
 }
 
 /* Container Principal */
@@ -58,7 +64,6 @@
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: var(--text-dark);
 }
 
 .form-group input,
