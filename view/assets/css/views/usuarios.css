@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0%;
+}
+
+:root {
+    --gradient: linear-gradient(49deg, hsl(263, 100%, 32%) 0%, rgba(218,112,255,1) 100%); 
+    --shadow:  rgba(0, 0, 0, 0.366);
+}
+
+
+thead {
+    background-color: #99bde1;
+    color: rgb(255, 255, 255);
+    height: 40px;
+}
+
+table {
+    border-collapse: collapse; 
+}
+
+th,
+td {
+    width: 400px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+tr:nth-child(even) {
+    background-color: #99bde1;
+}
+
+
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.usuario-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.usuario-container{
+    width: 74vw;
+}

@@ -1,0 +1,128 @@
+:root {
+    --background-button: #00ffe561;
+    --border-color: whitesmoke;
+}
+
+#menu-icon-show{
+    font-size: 21px;
+    color: white;
+    border: 1px solid white;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.defalt-link-style{
+    text-decoration: none;
+    color: white;
+}
+
+.aside {
+    width: 110px;
+    height: 100vh;
+    background-color:#151B23;
+    grid-column: 1;
+    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-left: 0.5px solid white;
+    gap: 7px;
+    z-index: 2;
+    button {
+        visibility: hidden;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .aside {
+        display: none;
+
+        button {
+            visibility: visible;
+        }
+    }
+}
+
+
+
+#link_categoria {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#link_categoria:hover {
+    background-color: var(--background-button);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#link_hover {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#link_hover:hover {
+    background-color: var(--background-button);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.default-icon-side-bar-div{
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#default-icon-size{
+    font-size: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#div-show-icon:hover{
+    
+}
+#div-filter-icon{
+
+}
+#div-tag-icon{
+
+}
+#div-user-icon{
+
+}
+#div-house-icon{
+
+}

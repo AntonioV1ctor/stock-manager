@@ -1,0 +1,18 @@
+.header {
+    border-bottom: 1px solid #3C424B;
+    background-color:#151B23;
+    width: 100%;
+    grid-column: 2;
+    height: 68px;
+    grid-row: 1;
+    z-index: 2;
+    display: flex;
+    align-items: top;
+}
+
+@media screen and (max-width: 490px) {
+    .header {
+        width: 100vw;
+        height: 48px;
+    }
+}

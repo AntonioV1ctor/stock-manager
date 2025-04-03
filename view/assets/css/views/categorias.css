@@ -1,0 +1,239 @@
+:root {
+    --primary: hsl(263, 100%, 32%);
+    --primary-light: rgba(218, 112, 255, 1);
+    --gradient: linear-gradient(49deg, var(--primary) 0%, var(--primary-light) 100%);
+    --shadow: rgba(0, 0, 0, 0.15);
+    --text-dark: #333;
+    --text-light: #ffffff;
+    --accent: #71ed6fc2;
+    --accent-dark: #7ba7ce;
+    --background: #f5f7fa;
+    --border-radius: 8px;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.categoria-main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.categoria-div-align{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    margin: 20px 0;
+    font-size: 32px;
+    color: var(--text-dark);
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--shadow);
+    margin-bottom: 30px;
+}
+
+thead {
+    background: var(--gradient);
+    color: var(--text-light);
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+}
+
+th {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+td {
+    color: var(--text-dark);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(153, 189, 225, 0.1);
+}
+
+tr:hover {
+    background-color: rgba(153, 189, 225, 0.2);
+}
+
+/* Edit Category Styling */
+.editar-categoria-div-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: var(--spacing) 0;
+}
+
+.editar-categoria-div {
+    width: 90%;
+    max-width: 600px;
+    min-height: 300px;
+    border-radius: var(--border-radius);
+    background-color: white;
+    box-shadow: 0 5px 15px var(--shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.editar-categoria-div h1 {
+    color: var(--primary);
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.categoria-edit-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--primary-light);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(218, 112, 255, 0.2);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 10px;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    background: var(--gradient);
+    color: white;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 5px 15px rgba(218, 112, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #f5f5f5;
+    color: var(--text-dark);
+}
+
+.btn-secondary:hover {
+    background-color: #e5e5e5;
+}
+
+.btn-edit, .btn-delete {
+    padding: 6px 12px;
+    margin: 0 3px;
+}
+
+.btn-edit {
+    background-color: var(--accent);
+    color: white;
+}
+
+.btn-delete {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.alert {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.alert-danger {
+    background-color: #ffe6e6;
+    color: #d63031;
+    border-left: 4px solid #d63031;
+}
+
+
+.actions{
+
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+
+}
+
+@media (max-width: 768px) {
+    .editar-categoria-div {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}

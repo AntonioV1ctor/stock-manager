@@ -1,0 +1,46 @@
+.home-main {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container {
+    width: 65vw;
+    height: 50vh;
+    border: 1px solid #2B3139;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.default-box-count {
+
+    margin-top: 20px;
+    width: 20dvw;
+    min-width: 100px;
+    flex-wrap: wrap;
+    height: 12dvh;
+    border: 1px solid #2B3139;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    border-radius: 10px;
+
+    h2 {
+        color: white;
+    }
+}
+
+#default-icon-count {
+    font-size: 30px;
+    margin-left: 10px;
+    color: white;
+
+}
+
+.category-cont-box {}
+
+.user-cont-box {}

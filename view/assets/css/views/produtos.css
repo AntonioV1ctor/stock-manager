@@ -1,0 +1,40 @@
+.produto {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.produto-add {
+    background-color: rgb(224, 46, 81);
+    font-family: "Poppins", sans-serif;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    width: 15vw;
+    transition: 1s;
+}
+
+.produto-add:hover {
+    scale: 105%;
+    filter: drop-shadow(1px 5px 10px rgb(0, 0, 0));
+}
+
+.title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.produtos-main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,17 @@
+main {
+    width: 100%;
+    height: calc(100vh - 68px - 22px);
+    background-color: #212830;
+    overflow: auto;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+@media screen and (max-width: 490px) {
+    main {
+        width: 100vw;
+        height: calc(100vh - 48px - 22px);
+        top: 48px;
+        
+    }
+}

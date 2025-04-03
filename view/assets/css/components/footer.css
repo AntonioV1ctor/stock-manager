@@ -1,0 +1,16 @@
+footer {
+    height: 22px;
+    height: auto;
+    background-color: burlywood;
+    /* position: fixed;
+    right: 0;
+    bottom: 0; */
+    grid-column: 2;
+    grid-row: 3;
+}
+
+@media screen and (max-width: 490px) {
+    footer {
+        width: 100vw;
+    }
+}

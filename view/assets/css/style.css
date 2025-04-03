@@ -1,0 +1,35 @@
+@import url(reset.css);
+@import url(components/content.css);
+@import url(components/footer.css);
+@import url(components/navbar.css);
+@import url(components/sidebar.css);
+@import url(views/categorias.css);
+@import url(views/produtos.css);
+@import url(views/usuarios.css);
+@import url(views/home.css);
+
+* {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 0px 1fr;
+    grid-template-rows: 68px 1fr 22px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+.link {
+    text-decoration: none;
+    color: #00ff66;
+    font-family: "Pixelify Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 10;
+    font-size: 20px;
+    font-style: normal;
+}
