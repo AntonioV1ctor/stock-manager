@@ -20,7 +20,7 @@ $db = $usuarios->listar();
             </div>
 
             <div class="table-responsive">
-                <table class="table-user">
+                <table class="table">
                     <thead>
                         <tr>
                             <th>Id</th>
@@ -29,7 +29,6 @@ $db = $usuarios->listar();
                             <th>Telefone</th>
                             <th>Data Nascimento</th>
                             <th>Cpf</th>
-                            <th>Genero</th>
                             <th>Opções</th>
                         </tr>
                     </thead>
@@ -42,7 +41,6 @@ $db = $usuarios->listar();
                                 <td><?php echo $usuario['telefone'] ?></td>
                                 <td><?php echo $usuario['data_nascimento'] ?></td>
                                 <td><?php echo $usuario['cpf'] ?></td>
-                                <td><?php echo $usuario['genero'] ?></td>
                                 <td class="actions-column">
                                     <a href="usuario-editar.php?id=<?php echo $usuario['id_user']; ?>" class="btn btn-edit">Editar</a>
                                     <form action="usuario-excluir.php" method="POST" style="display: inline;">

@@ -67,14 +67,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <label>CPF</label>
                         <input type="text" name="cpf" value="<?php echo $dados['cpf']; ?>" required>
                     </div>
-                    <div class="form-group">
-                        <label>Gênero</label>
-                        <select name="genero" required>
-                            <option value="M" <?php echo ($dados['genero'] == 'M') ? 'selected' : ''; ?>>Masculino</option>
-                            <option value="F" <?php echo ($dados['genero'] == 'F') ? 'selected' : ''; ?>>Feminino</option>
-                            <option value="O" <?php echo ($dados['genero'] == 'O') ? 'selected' : ''; ?>>Outro</option>
-                        </select>
-                    </div>
                     <div class="buttons">
                         <a href="index.php" class="btn btn-secondary">Cancelar</a>
                         <button type="submit" class="btn btn-primary">Salvar Alterações</button>

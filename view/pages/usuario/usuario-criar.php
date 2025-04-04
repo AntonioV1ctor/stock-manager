@@ -1,6 +1,5 @@
 <?php
 require_once '../../../model/Usuarios.php';
-
 $usuario = new Usuarios();
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -9,13 +8,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $telefone = $_POST['telefone'];
     $data_nascimento = $_POST['data_nascimento'];
     $cpf = $_POST['cpf'];
-    $genero = $_POST['genero'];
 
     if ($usuario->criar($nome, $email, $telefone, $data_nascimento, $cpf, $genero)) {
-        header("Location: index.php?success=Usuário adicionado com sucesso!");
+        header("Location: index.php");
         exit();
     } else {
-        $erro = "Erro ao adicionar o usuário.";
+        header("Location: ../errorpage/401.php ");
     }
 }
 ?>
@@ -54,15 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <div class="form-group">
                         <label>CPF</label>
                         <input type="text" name="cpf" placeholder="CPF" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Gênero</label>
-                        <select name="genero" required>
-                            <option value="">Selecione</option>
-                            <option value="M">Masculino</option>
-                            <option value="F">Feminino</option>
-                            <option value="O">Outro</option>
-                        </select>
                     </div>
                     <div class="buttons">
                         <a href="index.php" class="btn btn-secondary">Cancelar</a>

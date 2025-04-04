@@ -10,6 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/db29c2ca45.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/site-adm/view/assets/css/style.css">
+    <link rel="stylesheet" href="/stock-manager/view/assets/css/style.css">
     <title>StockManager</title>
 </head>

@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <h1>Adicionar Produto</h1>
 
             <div>
-                <form class="categoria-edit-area" method="POST">
+                <form class="produto-edit-area" method="POST">
                     <div class="form-group">
                         <label>Nome do Produto</label>
                         <input type="text" name="nome" placeholder="Nome do produto" required>

@@ -88,7 +88,6 @@ tr:hover {
 
 .editar-categoria-div {
     width: 90%;
-    height: 350px;
     max-width: 300px;
     min-height: 50px;
     border-radius: var(--border-radius);

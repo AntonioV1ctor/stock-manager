@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['id'])) {
         header("Location: index.php?success=Categoria excluída com sucesso!");
         exit();
     } else {
-        header("Location: index.php?error=Erro ao excluir a categoria.");
+        header("Location: ../errorpage/401.php ");
         exit();
     }
 } else {

@@ -34,15 +34,14 @@ INSERT INTO Produto (nome, categoria_id, descricao, preco) VALUES
     ('Kit de Faróis LED para Carro', (SELECT id_categoria FROM Categoria WHERE nome='Automotivo'), 'Kit completo de faróis LED para melhoria da visibilidade do seu veículo.', 299.00),
     ('Jogo de Tabuleiro Catan', (SELECT id_categoria FROM Categoria WHERE nome='Brinquedos e Jogos'), 'Jogo de estratégia onde os jogadores constroem e negociam recursos.', 249.90);
 
-
-INSERT INTO Usuario (nome, email, senha, telefone, data_nascimento, cpf, genero, foto_perfil) VALUES
-    ('João Silva', 'joao.silva@email.com', 'hash_da_senha', '11999990001', '1990-01-15', '12345678901', 'Masculino', 'joao.jpg'),
-    ('Maria Oliveira', 'maria.oliveira@email.com', 'hash_da_senha', '11999990002', '1985-02-20', '12345678902', 'Feminino', 'maria.jpg'),
-    ('Carlos Souza', 'carlos.souza@email.com', 'hash_da_senha', '11999990003', '1992-03-25', '12345678903', 'Masculino', 'carlos.jpg'),
-    ('Ana Lima', 'ana.lima@email.com', 'hash_da_senha', '11999990004', '1995-04-10', '12345678904', 'Feminino', 'ana.jpg'),
-    ('Pedro Santos', 'pedro.santos@email.com', 'hash_da_senha', '11999990005', '1988-05-30', '12345678905', 'Masculino', 'pedro.jpg'),
-    ('Juliana Costa', 'juliana.costa@email.com', 'hash_da_senha', '11999990006', '1991-06-12', '12345678906', 'Feminino', 'juliana.jpg'),
-    ('Lucas Almeida', 'lucas.almeida@email.com', 'hash_da_senha', '11999990007', '1994-07-05', '12345678907', 'Masculino', 'lucas.jpg'),
-    ('Fernanda Rocha', 'fernanda.rocha@email.com', 'hash_da_senha', '11999990008', '1990-08-21', '12345678908', 'Feminino', 'fernanda.jpg'),
-    ('Ricardo Mendes', 'ricardo.mendes@email.com', 'hash_da_senha', '11999990009', '1987-09-09', '12345678909', 'Masculino', 'ricardo.jpg'),
-    ('Camila Nogueira', 'camila.nogueira@email.com', 'hash_da_senha', '11999990010', '1993-10-14', '12345678910', 'Feminino', 'camila.jpg');
+INSERT INTO Usuario (nome, email, telefone, data_nascimento, cpf) VALUES
+    ('João Silva', 'joao.silva@email.com', '11999990001', '1990-01-15', '123.456.789-01'),
+    ('Maria Oliveira', 'maria.oliveira@email.com', '11999990002', '1985-02-20', '123.456.789-02'),
+    ('Carlos Souza', 'carlos.souza@email.com', '11999990003', '1992-03-25', '123.456.789-03'),
+    ('Ana Lima', 'ana.lima@email.com', '11999990004', '1995-04-10', '123.456.789-04'),
+    ('Pedro Santos', 'pedro.santos@email.com', '11999990005', '1988-05-30', '123.456.789-05'),
+    ('Juliana Costa', 'juliana.costa@email.com', '11999990006', '1991-06-12', '123.456.789-06'),
+    ('Lucas Almeida', 'lucas.almeida@email.com', '11999990007', '1994-07-05', '123.456.789-07'),
+    ('Fernanda Rocha', 'fernanda.rocha@email.com', '11999990008', '1990-08-21', '123.456.789-08'),
+    ('Ricardo Mendes', 'ricardo.mendes@email.com', '11999990009', '1987-09-09', '123.456.789-09'),
+    ('Camila Nogueira', 'camila.nogueira@email.com', '11999990010', '1993-10-14', '123.456.789-10');

@@ -1,0 +1,27 @@
+.error-main{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Statuscode-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
+    height: 100px;
+    /* background-color: aliceblue; */
+}
+
+.Errorcode-401{
+    font-size: 31px;
+    color: red;
+}
+
+.Statuscode-401{
+    font-size: 12px;
+    color: aliceblue;
+}

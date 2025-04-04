@@ -7,6 +7,7 @@
 @import url(views/produtos.css);
 @import url(views/usuarios.css);
 @import url(views/home.css);
+@import url(views/errorpages.css);
 
 * {
     font-family: "Roboto", sans-serif;
