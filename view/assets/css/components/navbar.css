@@ -40,8 +40,9 @@
 
 #hidden-options {
     width: 390px;
-    height: 90px;
-    background-color: red;
+    min-height: 100px;
+    border-bottom: 1px solid #ffffff;
+    background-color: #2B3139;
     display: flex;
     align-items: center;
     justify-content: center;
